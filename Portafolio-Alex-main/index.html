@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">ALEX</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/alex.png" alt="">
+            </div>
+            <h1>ALEX ROFES</h1>
+            <h2>Programador Full Stack</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/alex.rofesgalobardes/?locale=es_ES" target="_blank"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/alex_rofes/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/RofinhoOo" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/%C3%A0lexrofesgalobardes/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Alex Rofes, un Programador Full Stack.</span> Me destaco por mi compromiso con el trabajo
+                en equipo y mi meticulosa atención a los detalles. Mi objetivo principal es contribuir
+                significativamente al producto final. Además, mi formación en SEO añade un valor adicional a los
+                proyectos en los que participo.</p>
+
+            <div class="fila">
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            07.02.1992
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +34 649189201
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            alexrofes1992@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            https://alexrofes.vercel.app/
+                        </li>
+                        <li>
+                            <strong>Lugar</strong>
+                            Barcelona, España
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-kitchen-set"></i>
+                            <span>COCINA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-music"></i>
+                            <span>BAILE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>CINE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-dog"></i></i>
+                            <span>ANIMALES</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <a href="img/CV.pdf" download>
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div>
+                    <div class="skill">
+                        <img src="img/html.png" alt="HTML5" class="icono" style="width: 100px; height: 80px;">
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill">
+                        <img src="img/css.png" alt="css" class="icono" style="width: 100px; height: 80px;">
+                        <span>CSS</span>
+                    </div>
+                    <div class="skill">
+                        <img src="img/jv.png" alt="JavaScript" class="icono" style="width: 120px; height: 80px;">
+                        <span>Javascript</span>
+                    </div>  
+                    <div class="skill">
+                        <img src="img/react.png" alt="React" class="icono" style="width: 120px; height: 80px;">
+                        <span>React</span>
+                    </div>  
+                    <div class="skill">
+                        <img src="img/python.png" alt="Python" class="icono" style="width: 120px; height: 80px;">
+                        <span>Python</span>
+                    </div>  
+                     
+   
+                </div>
+            </div>
+    </section>
+
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Programador Full Stack</h4>
+                        <span class="casa">4Geeks Academy</span>
+                        <span class="fecha">2023</span>
+                        <p>Me gradué en el bootcamp de 4Geeks Academy, donde adquirí habilidades en programación full
+                            stack. Esta experiencia me permitió trabajar con HTML, CSS, JavaScript, Python, SQL, React,
+                            Bootstrap y más, preparándome para el mundo del desarrollo de software.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>SEO</h4>
+                        <span class="casa">IEBS Business School</span>
+                        <span class="fecha">2020</span>
+                        <p>Estudié en IEBS Business School para aprender SEO/SEM, adquiriendo habilidades en
+                            optimización y publicidad en motores de búsqueda, mejorando la presencia en línea y el
+                            rendimiento de campañas digitales.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Titulación de chef</h4>
+                        <span class="casa">Escuela Hostelería Hofmann</span>
+                        <span class="fecha">2015</span>
+                        <p>Estudié en la Escuela de Hostelería Hofmann para desarrollar habilidades culinarias y
+                            convertirme en chef, aprendiendo técnicas y conocimientos fundamentales en gastronomía.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Cocinero</h4>
+                        <span class="casa">Restaurante Betlem</span>
+                        <span class="fecha">2021</span>
+                        <p>Tuve la oportunidad de trabajar en el restaurante Betlem, un destacado establecimiento
+                            gastronómico, donde adquirí una amplia experiencia en diversas áreas de la cocina,
+                            incluyendo la preparación de platos calientes, fríos y pastelería</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Cocinero</h4>
+                        <span class="casa">Restaurante Rilke</span>
+                        <span class="fecha">2019</span>
+                        <p>Trabajé en el restaurante Rilke, galardonado con una estrella Michelin, donde asumí el rol de
+                            jefe de cuarto frío y también colaboré en el área de pastelería, lo que me brindó una
+                            invaluable experiencia y conocimientos en alta gastronomía.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>  
+                    <div class="item der">
+                        <h4>Segundo de cocina</h4>
+                        <span class="casa">Restaurante Caballa Canalla</span>
+                        <span class="fecha">2018</span>
+                        <p>Desempeñé un papel clave como Segundo de Cocina y Jefe de Pastelería en El Caballa Canalla,
+                            liderando un equipo en un restaurante con capacidad para 250 personas.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>  
+                    <div class="item der">
+                        <h4>Cocinero</h4>
+                        <span class="casa">Restaurante Taverna Hofmann</span>
+                        <span class="fecha">2015</span>
+                        <p>Trabajé como cocinero en La Taverna Hofmann, un restaurante gastronómico afiliado a la
+                            escuela donde estudié, lo que me brindó la oportunidad de adquirir valiosas habilidades
+                            culinarias.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>                                                  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <a href="https://lnkd.in/d2wpHk5Y" class="proyecto-enlace">
+                    <div class="proyecto">
+                        <img src="img/rider.PNG" alt="">
+                        <div class="overlay">
+                            <h3>Desarrollador Full Stack</h3>
+                            <p>App RiderMusic</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form id="formulario-contacto" action="procesar_formulario.php" method="post">
+                        <input type="text" id="nombre" placeholder="Tu Nombre">
+                        <input type="text" id="telefono" placeholder="Número telefónico">
+                        <input type="email" id="correo" placeholder="Dirección de correo">
+                        <input type="text" id="tema" placeholder="Tema">
+                        <textarea id="mensaje" placeholder="Mensaje"></textarea>
+                        <button type="submit">Enviar Mensaje <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/barcelona.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Barcelona, España
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamame: +34 649189201
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: alexrofes1992@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/alex.rofesgalobardes/?locale=es_ES" target="_blank"><i
+                    class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/alex_rofes/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/RofinhoOo" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/%C3%A0lexrofesgalobardes/" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
