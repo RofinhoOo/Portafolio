@@ -10,8 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="estilo.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
@@ -150,83 +149,83 @@
             <div class="row">
                 <!-- Primera fila -->
                 <div class="col-md-2 col-6">
-                    <div class="skill text-center">
+                    <div class="text-center skill">
                         <img src="img/html.png" alt="HTML5" class="icono">
-                        <span class="text-below">HTML5</span>
+                        <span>HTML5</span>
                     </div>
                 </div>
                 <div class="col-md-2 col-6">
-                    <div class="skill text-center">
+                    <div class="text-center skill">
                         <img src="img/css.png" alt="CSS" class="icono">
-                        <span class="text-below">CSS</span>
+                        <span>CSS</span>
                     </div>
                 </div>
                 <div class="col-md-2 col-6">
-                    <div class="skill text-center">
-                        <img src="img/javascript.png" alt="JV" class="icono">
-                        <span class="text-below">Javascript</span>
+                    <div class="text-center skill">
+                        <img src="img/javascript.png" alt="Java" class="icono">
+                        <span>Javascript</span>
                     </div>
                 </div>
-
+                
                 <!-- Segunda fila -->
                 <div class="col-md-2 col-6">
-                    <div class="skill text-center">
+                    <div class="text-center skill">
                         <img src="img/react.png" alt="React" class="icono">
-                        <span class="text-below">React</span>
+                        <span>React</span>
                     </div>
                 </div>
                 <div class="col-md-2 col-6">
-                    <div class="skill text-center">
+                    <div class="text-center skill">
                         <img src="img/python.png" alt="Python" class="icono">
-                        <span class="text-below">Python</span>
+                        <span>Python</span>
                     </div>
                 </div>
                 <div class="col-md-2 col-6">
-                    <div class="skill text-center">
+                    <div class="text-center skill">
                         <img src="img/sql.png" alt="SQL" class="icono">
-                        <span class="text-below">SQL</span>
+                        <span>SQL</span>
                     </div>
                 </div>
                 <div class="col-md-2 col-6">
-                    <div class="skill text-center">
+                    <div class="text-center skill">
                         <img src="img/seo.png" alt="SEO" class="icono">
-                        <span class="text-below">SEO</span>
+                        <span>SEO</span>
                     </div>
                 </div>
                 <div class="col-md-2 col-6">
-                    <div class="skill text-center">
+                    <div class="skill">
                         <img src="img/nodejs.png" alt="Node.js" class="icono">
-                        <span class="text-below">Node.js</span>
+                        <span>Node.js</span>
                     </div>
                 </div>
                 <div class="col-md-2 col-6">
-                    <div class="skill text-center">
+                    <div class="skill">
                         <img src="img/tailwin.png" alt="Tailwind CSS" class="icono">
-                        <span class="text-below">Tailwind CSS</span>
+                        <span>Tailwind CSS</span>
                     </div>
                 </div>
                 <div class="col-md-2 col-6">
-                    <div class="skill text-center">
-                        <img src="img/postman.png" alt="Postman" class="icono">
-                        <span class="text-below">Postman</span>
+                    <div class="skill">
+                        <img src="img/daisyui.png" alt="DaisyUI" class="icono">
+                        <span>DaisyUI</span>
                     </div>
                 </div>
                 <div class="col-md-2 col-6">
-                    <div class="skill text-center">
+                    <div class="skill">
                         <img src="img/flask.png" alt="Flask" class="icono">
-                        <span class="text-below">Flask</span>
+                        <span>Flask</span>
                     </div>
                 </div>
                 <div class="col-md-2 col-6">
-                    <div class="skill text-center">
+                    <div class="skill">
                         <img src="img/github.png" alt="GitHub" class="icono">
-                        <span class="text-below">GitHub</span>
+                        <span>GitHub</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    
 
 
 
@@ -338,24 +337,40 @@
         </div>
     </section>
 
+
+    <!-- SECCION CONTACTO -->
     <section id="contacto" class="contacto">
-        <div class="container">
-            <div class="row">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
                 <div class="col">
-                    <h2 class="section-title">¡Hablemos!</h2>
-                    <div class="contact-info">
+                    <form id="formulario-contacto" action="procesar_formulario.php" method="post">
+                        <input type="text" id="nombre" placeholder="Tu Nombre">
+                        <input type="text" id="telefono" placeholder="Número telefónico">
+                        <input type="email" id="correo" placeholder="Dirección de correo">
+                        <input type="text" id="tema" placeholder="Tema">
+                        <textarea id="mensaje" placeholder="Mensaje"></textarea>
+                        <button type="submit">Enviar Mensaje <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/barcelona.png" alt="">
+                    <div class="info">
                         <ul>
                             <li>
-                                <i class="fa-solid fa-location-dot"></i> <span class="info-label">Ubicación:</span>
+                                <i class="fa-solid fa-location-dot"></i>
                                 Barcelona, España
                             </li>
                             <li>
-                                <i class="fa-solid fa-mobile-screen"></i> <span class="info-label">Teléfono:</span> +34
-                                649 189 201
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamame: +34 649189201
                             </li>
                             <li>
-                                <i class="fa-solid fa-envelope"></i> <span class="info-label">Email:</span> <a
-                                    href="mailto:alexrofes1992@gmail.com" class="email-link">alexrofes1992@gmail.com</a>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: alexrofes1992@gmail.com
                             </li>
                         </ul>
                     </div>
@@ -363,8 +378,6 @@
             </div>
         </div>
     </section>
-    
-
 
     <!-- footer -->
     <footer>
@@ -382,9 +395,7 @@
     </footer>
 
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 </html>
