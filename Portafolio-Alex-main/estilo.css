@@ -48,9 +48,9 @@ html{
 
 /* Agrega esto a tu hoja de estilo CSS */
 a {
-    text-decoration: none;
-  }
-  
+    text-decoration: none !important; /* Quita el subrayado de los enlaces */
+}
+
 .contenedor-header header .logo a{
     font-family: 'Righteous';
     font-size: 36px;
@@ -231,20 +231,21 @@ a {
     background-color: #1CB698;
     z-index: -1;
     transition: 1s;
-    
 }
 .sobremi button:hover .overlay{
     width: 100%;
 }
 /* SECCION S K I L L S */
-/* Estilo para la sección de habilidades */
 /* Estilos para la sección "Skills" */
+
 .skills {
     background-color: #252A2E;
     color: #fff;
     padding: 50px 0;
-    text-align: center; /* Alinea el contenido al centro horizontalmente */
+    text-align: center; /* Centrar el contenido horizontalmente */
 }
+
+
 
 .skills h2 {
     font-size: 48px;
@@ -252,23 +253,13 @@ a {
     padding: 20px 0;
 }
 
-.skills .container {
+.skills .fila {
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra el contenido verticalmente */
-}
-
-.skills .row {
-    display: flex;
-    justify-content: center; /* Centra las columnas horizontalmente */
+    justify-content: space-between; /* Espacio entre las dos columnas */
 }
 
 .skills .col-md-6 {
-    width: 50%; /* Establece el ancho de las columnas al 50% */
-    padding: 10px; /* Añade un espacio entre las columnas */
-}
-
-.skills .skill {
+    width: 48%; /* Ancho del 48% para dos columnas en una fila con espacio entre ellas */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -276,25 +267,34 @@ a {
     font-size: 20px;
     text-align: center;
     padding-top: 20px;
-    position: relative;
+    position: relative; /* Para el efecto de brillo */
 }
+
 
 .skills .icono {
     width: 100px;
-    height: 100px;
+    height: 100px; /* Altura fija para todas las imágenes */
     margin-bottom: 10px;
     object-fit: contain;
-    transition: transform 0.3s, filter 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, filter 0.3s, box-shadow 0.3s; /* Transiciones para agrandar, brillo y sombra */
 }
 
 .skills span {
     font-weight: bold;
 }
 
+/* Efecto de agrandar y brillo al pasar el mouse */
 .skills .icono:hover {
     filter: brightness(1.2);
     transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Sombra al pasar el mouse */
     box-shadow: none;
+}
+
+.text-below {
+    display: block;
+    margin-top: 3px; /* Ajusta este valor según sea necesario */
+    margin-bottom: 40px;
 }
 
 
@@ -442,7 +442,7 @@ a {
     width: 100%;
     height: 100%;
     text-align: center;
-    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+    background: linear-gradient(rgba(28,182,152,.8), rgba(239, 241, 241, 0.8));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -466,31 +466,87 @@ a {
 
 /* Estilo para la sección de contacto */
 
-.contacto{
+/* Estilo para la sección de contacto */
+.contacto {
     background-image: url(img/contact_bg.png);
     background-color: #1e2326;
+    padding: 50px 0; /* Reducido el padding superior e inferior */
     color: #fff;
-    padding: 50px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    min-height: 60vh; /* Establece la altura mínima al 100% del viewport */
+    
 }
-.contacto .contenido-seccion{
+
+.contacto .container {
+    max-width: 350px; /* Establece el ancho máximo deseado */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+.contacto .contenido-seccion {
     max-width: 1100px;
     margin: auto;
+    width: 100%; /* Asegura que el contenido se ajuste al ancho del contenedor */
 }
-.contacto h2{
+
+.contacto h2.section-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.contacto .contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contacto .contact-info ul li {
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center; /* Centrar verticalmente los elementos de la lista */
+}
+
+.contacto .contact-info .info-label {
+    font-weight: bold;
+    margin-right: 10px; /* Espacio entre la etiqueta y el texto */
+}
+
+.contacto .contact-info i {
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+.contacto .email-link {
+    color: #1CB698;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contacto .email-link:hover {
+    color: #fff;
+}
+
+.contacto h2 {
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
-.contacto .fila{
+
+.contacto .fila {
     display: flex;
 }
-.contacto .col{
+
+.contacto .col {
     width: 50%;
     padding: 10px;
     position: relative;
+    margin: 0;
 }
-.contacto .col input, .contacto .col textarea{
+
+.contacto .col input, .contacto .col textarea {
     display: block;
     width: 100%;
     padding: 18px;
@@ -500,7 +556,8 @@ a {
     color: #fff;
     font-size: 18px;
 }
-.contacto button{
+
+.contacto button {
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
@@ -512,8 +569,15 @@ a {
     color: #fff;
     position: relative;
     z-index: 10;
+    transition: background-color 0.3s, color 0.3s;
 }
-.contacto button .overlay{
+
+.contacto button:hover {
+    background-color: #1CB698;
+    color: #fff;
+}
+
+.contacto button .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -523,32 +587,43 @@ a {
     z-index: -1;
     transition: 1s;
 }
-.contacto button:hover .overlay{
+
+.contacto button:hover .overlay {
     width: 100%;
 }
-.contacto .col img{
-    width: 100%;
+
+.contacto .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-position: 30% center !important;
 }
-.contacto .col .info{
+
+.contacto .col .info {
     position: absolute;
     top: 40%;
     background-color: #252A2E;
-    padding: 20px;
+    padding: 10px; /* Reducido el padding */
     max-swidth: 350px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.contacto .col .info ul{
+
+.contacto .col .info ul {
     list-style: none;
 }
-.contacto .col .info ul li{
-    margin-bottom: 20px;
+
+.contacto .col .info ul li {
+    margin-bottom: 10px; /* Reducido el margen inferior */
 }
-.contacto .col .info ul li i{
+
+.contacto .col .info ul li i {
     color: #1CB698;
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 10px; /* Espacio entre el icono y el texto */
 }
+
+
 
 footer{
     background-color: #252A2E;
@@ -561,7 +636,8 @@ footer{
 footer .redes{
     margin-bottom: 20px;
 }
-footer .redes a{
+/* Estilo normal de los íconos de redes sociales */
+footer .redes a {
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -572,8 +648,15 @@ footer .redes a{
     line-height: 42px;
     margin: 40px 5px;
     font-size: 20px;
-    transition: .3s;
+    transition: color 0.3s, background-color 0.3s; /* Agrega transiciones suaves para el color del texto y el fondo */
 }
+
+/* Estilo al pasar el cursor sobre los íconos de redes sociales */
+footer .redes a:hover {
+    background-color: #1CB698; /* Cambia el fondo a verde */
+    color: #fff; /* Cambia el color del texto a blanco */
+}
+
 footer .arriba{
     display: block;
     width: 50px;
