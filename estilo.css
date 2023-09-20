@@ -114,7 +114,7 @@ a {
     font-family: 'Righteous';
 }
 .inicio .contenido-banner h2{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: normal;
 }
 .inicio .contenido-banner .redes a{
@@ -202,7 +202,9 @@ a {
     align-items: center;
     justify-content: center;
     transition: .3s;
-
+}.sobremi .fila .col .contenedor-intereses .interes:hover{
+    background-color: #1CB698;
+}
 .sobremi .fila .col .contenedor-intereses .interes i{
     font-size: 30px;
     margin-bottom: 10px;
