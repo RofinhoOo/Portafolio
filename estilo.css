@@ -141,6 +141,7 @@ a {
 .sobremi .contenido-seccion{
     max-width: 1100px;
     margin: auto;
+    text-align: left; /* Alinea el texto a la izquierda */
 }
 .sobremi h2{
     font-size: 48px;
@@ -323,6 +324,8 @@ a {
     width: 49%;
     padding: 0 20px;
 }
+
+
 .curriculum .fila .col h3{
     font-size: 28px;
     font-family: 'Righteous';
@@ -739,4 +742,31 @@ footer .arriba{
     .contacto .fila .col{
         width: 100%;
     }
+
+    nav {
+        display: none; /* Oculta el menú de navegación normal */
+    }
+    
+    .nav-responsive {
+        display: block; /* Muestra el botón de hamburguesa u otro ícono para abrir el menú */
+    }
+    
+    nav.responsive {
+        /* Estilos para el menú de navegación móvil */
+        /* ... */
+    }
+    
+    nav.responsive ul {
+        /* ... */
+    }
+    
+    nav.responsive ul li {
+        /* ... */
+    }
+
+    body {
+        font-size: 16px; /* Ajusta el tamaño de fuente para dispositivos móviles */
+        /* ... otros ajustes generales ... */
+    }
+
 }
