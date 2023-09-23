@@ -324,13 +324,6 @@ a {
     width: 49%;
     padding: 0 20px;
 }
-/* Estilo para la sección "Datos Personales" */
-.datos-personales {
-    background-color: transparent; /* Establece el fondo como transparente */
-    padding: 50px 20px;
-    color: #fff;
-}
-
 
 
 .curriculum .fila .col h3{
@@ -749,4 +742,31 @@ footer .arriba{
     .contacto .fila .col{
         width: 100%;
     }
+
+    nav {
+        display: none; /* Oculta el menú de navegación normal */
+    }
+    
+    .nav-responsive {
+        display: block; /* Muestra el botón de hamburguesa u otro ícono para abrir el menú */
+    }
+    
+    nav.responsive {
+        /* Estilos para el menú de navegación móvil */
+        /* ... */
+    }
+    
+    nav.responsive ul {
+        /* ... */
+    }
+    
+    nav.responsive ul li {
+        /* ... */
+    }
+
+    body {
+        font-size: 16px; /* Ajusta el tamaño de fuente para dispositivos móviles */
+        /* ... otros ajustes generales ... */
+    }
+
 }
