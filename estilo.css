@@ -6,8 +6,8 @@
     padding: 0;
 }
 html{
-    /* me permite deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
+    transition-duration: 1s; /* Ajusta la duración de la transición según tu preferencia */
 }
 /* MENU */
 .inicio {
@@ -137,40 +137,57 @@ a {
     background-color: #1e2326;
     color: #fff;
     padding: 50px 20px;
+    
+    
 }
 .sobremi .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
-    text-align: left; /* Alinea el texto a la izquierda */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .sobremi h2{
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
+    
 
 }
 .sobremi .contenido-seccion p{
     font: 18px;
     line-height: 22px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    
 }
 .sobremi .contenido-seccion p span{
     color: #1CB698;
     font-weight: bold;
+    text-align: center;
 }
 .sobremi .fila{
     display: flex;
 }
 .sobremi .fila .col
 {
-    width: 50%;
+    min-height: 220px; /* Establece la altura mínima uniforme para los contenedores de texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye el contenido verticalmente */
 }
 .sobremi .fila .col h3{
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
+    margin-top: 60px;
+    margin-left: 30;
 }
+
+.datos-personales{
+    margin-left: 30px;
+}
+
 .sobremi .fila .col ul{
     list-style: none;
 }
@@ -217,6 +234,7 @@ a {
     width: fit-content;
     display: block;
     margin: 20px auto;
+    margin-top: 50px;
     padding: 10px 22px;
     font-size: 16px;
     color: #fff;
@@ -244,6 +262,12 @@ a {
     color: #fff;
     padding: 50px 0;
     text-align: center; /* Centrar el contenido horizontalmente */
+    transition: opacity 0.5s ease; /* Agrega una transición de opacidad */
+    opacity: 1; /* Configura la opacidad inicial en 0 */
+}
+
+.skills.active {
+    opacity: 1; /* Cuando se desplaza a la sección, muestra gradualmente con opacidad 1 */
 }
 
 
@@ -252,6 +276,7 @@ a {
     font-size: 48px;
     font-family: 'Righteous', sans-serif;
     padding: 20px 0;
+    margin-bottom: 40px;
 }
 
 .skills .fila {
@@ -314,15 +339,29 @@ a {
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
+    margin-bottom: 30px;
 
 }
+
+/* Aplica una altura fija a los elementos <p> con la clase "altura-fija" */
+.altura-fija {
+    height: 150px; /* Ajusta la altura según tus necesidades */
+    overflow: hidden; /* Puede ser útil para recortar el contenido si es demasiado largo */
+}
+
 .curriculum .fila{
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 .curriculum .fila .col{
-    width: 49%;
+    width: 48%;
     padding: 0 20px;
+    
+}
+
+.trabajo{
+    margin-left: 20px;
 }
 
 
@@ -333,9 +372,17 @@ a {
 }
 .curriculum .fila .izquierda{
     border-right: 2px solid #252A2E;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    
 }
 .curriculum .fila .derecha{
     border-left: 2px solid #252A2E;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .curriculum .fila .item{
     padding: 25px;
@@ -356,25 +403,56 @@ a {
 .curriculum .fila .item .fecha{
     display: block;
     color: #1CB698;
-    margin-bottom: 10px;
+    
 }
 .curriculum .fila .item p{
     line-height: 24px;
+    margin-top: 15px;
+    text-align: justify;
+    word-spacing: normal !important;
+    
 }
 .curriculum .fila .izq{
     border-right: 2px solid #1CB698;
     margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
+
 .curriculum .fila .der{
     border-left: 2px solid #1CB698;
     margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.curriculum .fila .item .conectori{
+
+.curriculum .fila .item .conectori-1{
     height: 2px;
     background-color: #1CB698;
     width: 47px;
     position: absolute;
-    top: 50%;
+    top: 40%;
+    right: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectori-2{
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position: absolute;
+    top: 40%;
+    right: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectori-3{
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position: absolute;
+    top: 80%;
     right: -47px;
     z-index: 5;
 }
@@ -388,15 +466,50 @@ a {
     position: relative;
     bottom: 4px;
 }
+
+.curriculum .fila .item .conectori-1 .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+
+.curriculum .fila .item .conectori-2 .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+
+.curriculum .fila .item .conectori-3 .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+
 .curriculum .fila .item .conectord{
     height: 2px;
     background-color: #1CB698;
     width: 47px;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: -47px;
     z-index: 5;
 }
+
 .curriculum .fila .item .conectord .circulod{
     display: block;
     height: 10px;
@@ -407,6 +520,7 @@ a {
     position: relative;
     bottom: 4px;
 }
+
 /* SECCION PORTFOLIO */
 .portfolio{
     background-color: #252A2E;
@@ -574,6 +688,9 @@ a {
     z-index: 10;
     transition: background-color 0.3s, color 0.3s;
 }
+
+
+
 
 .contacto button:hover {
     background-color: #1CB698;

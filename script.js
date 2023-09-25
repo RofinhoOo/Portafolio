@@ -1,42 +1,5 @@
 let menuVisible = false;
 
-function enviarMensaje() {
-    // Obtener los valores de los campos del formulario
-    const nombre = document.getElementById("nombre").value;
-    const telefono = document.getElementById("telefono").value;
-    const correo = document.getElementById("correo").value;
-    const tema = document.getElementById("tema").value;
-    const mensaje = document.getElementById("mensaje").value;
-
-    // Validar que los campos no estén vacíos (puedes agregar más validaciones si es necesario)
-    if (nombre === "" || telefono === "" || correo === "" || tema === "" || mensaje === "") {
-        alert("Por favor, completa todos los campos del formulario.");
-        return;
-    }
-
-    // Crear un objeto XMLHttpRequest
-    const xhr = new XMLHttpRequest();
-
-    // Configurar la solicitud AJAX
-    xhr.open("POST", "enviar_correo.php", true); // Reemplaza "enviar_correo.php" con la ruta correcta al script en tu servidor
-    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-
-    // Definir la función que se ejecutará cuando la solicitud AJAX se complete
-    xhr.onload = function () {
-        if (xhr.status === 200) {
-            alert(xhr.responseText); // Muestra la respuesta del servidor (puede ser un mensaje de confirmación)
-        } else {
-            alert("Error al enviar el correo electrónico.");
-        }
-    };
-
-    // Enviar los datos del formulario al servidor
-    const formData = `nombre=${nombre}&telefono=${telefono}&correo=${correo}&tema=${tema}&mensaje=${mensaje}`;
-    xhr.send(formData);
-}
-
-
-
 // Función que oculta o muestra el menú
 function mostrarOcultarMenu() {
     const nav = document.getElementById("nav");
@@ -89,4 +52,23 @@ window.addEventListener("scroll", efectoHabilidades);
 const elementosMenu = document.querySelectorAll("#nav ul li a");
 elementosMenu.forEach((elemento) => {
     elemento.addEventListener("click", seleccionar);
+});
+
+// JavaScript para agregar/quitar clases al desplazarse hacia secciones
+document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('section');
+    
+    // Agrega un controlador de eventos para el evento de desplazamiento
+    window.addEventListener('scroll', function () {
+        sections.forEach(section => {
+            const sectionTop = section.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            
+            if (sectionTop < windowHeight / 2) {
+                section.classList.add('active'); // Agrega la clase 'active' cuando la sección está a la vista
+            } else {
+                section.classList.remove('active'); // Elimina la clase 'active' cuando la sección no está a la vista
+            }
+        });
+    });
 });
