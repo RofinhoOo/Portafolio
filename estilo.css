@@ -89,7 +89,7 @@ a {
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
     url(img/fondo.jpg);
     background-size: cover;
-    height: 100vh;
+    height: 90vh;
     color: #fff;
     display: flex;
     align-items: center;
