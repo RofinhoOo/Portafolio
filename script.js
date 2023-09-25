@@ -41,7 +41,7 @@ function obtenerClaseAnimacion(indice) {
     return clasesAnimaciones[indice];
 }
 
-window.addEventListener("scroll", efectoHabilidades);
+window.addEventListener("scroll", efectoHabilidades());
 
 const elementosMenu = document.querySelectorAll("#nav ul li a");
 elementosMenu.forEach((elemento) => {
