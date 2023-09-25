@@ -49,6 +49,7 @@ html{
 /* Agrega esto a tu hoja de estilo CSS */
 a {
     text-decoration: none !important; /* Quita el subrayado de los enlaces */
+    color: white;
 }
 
 .contenedor-header header .logo a{
