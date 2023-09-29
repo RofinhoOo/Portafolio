@@ -254,12 +254,13 @@ a {
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #1CB698;
+    background-color: #252A2E;
     z-index: -1;
-    transition: 1s;
+    transition: 2s;
 }
 .sobremi button:hover .overlay{
     width: 100%;
+    background-color: #1CB698;
 }
 /* SECCION S K I L L S */
 /* Estilos para la sección "Skills" */
@@ -750,7 +751,7 @@ a {
 
 /* Estilos generales para formularios */
 form {
-    max-width: 400px;
+    max-width: 300px;
     margin: 0 auto;
     background-color: #b9b8b63d;
     padding: 20px;
@@ -763,6 +764,10 @@ label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
+}
+
+#list li{
+    font-size: 16px;
 }
 
 /* Estilos para campos de entrada de texto */
@@ -869,6 +874,9 @@ footer .arriba{
     }
     .sobremi .fila .col{
         width: fit-content;
+    }
+    .sobremi .fila .col .contenedor-intereses{
+        justify-content: center;
     }
 
     .skills .fila{
