@@ -1011,7 +1011,7 @@ footer .arriba {
        margin-left: 15px;
     }
     .contacto .contact-info ul{
-        margin-left: 15px;
+        margin-left: 25px;
     }
     .skills .fila {
         display: block;
@@ -1026,7 +1026,7 @@ footer .arriba {
     }
 
     .sobremi .fila .col h3 {
-        margin-left: 40px;
+        text-align: center;
     }
 
     .curriculum .fila {
