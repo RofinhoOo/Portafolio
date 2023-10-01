@@ -25,6 +25,8 @@ function efectoHabilidades() {
     }
 }
 
+
+
 function obtenerClaseAnimacion(indice) {
     const clasesAnimaciones = [
         "javascript",
