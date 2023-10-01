@@ -1010,6 +1010,7 @@ footer .arriba {
 
  .sobremi .fila .col .contenedor-intereses {
  justify-content: center;
+ margin-left: 20px;
  }
  
  .sobremi .fila .col ul li strong {
