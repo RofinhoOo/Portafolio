@@ -1015,6 +1015,8 @@ footer .arriba {
  .sobremi .fila .col ul li strong {
  display: flex;
  max-width: 300%;
+  
+
 
  }
 
@@ -1066,6 +1068,7 @@ footer .arriba {
 
  .sobremi .fila .col ul li{
     display: flex;
+    margin-right: 15px;   
  }
 
  .curriculum .fila .der {
