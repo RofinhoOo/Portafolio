@@ -1068,7 +1068,8 @@ footer .arriba {
 
  .sobremi .fila .col ul li{
     display: flex;
-    margin-right: 15px;   
+    margin-right: 20px;   
+    font-size: 15px;
  }
 
  .curriculum .fila .der {
