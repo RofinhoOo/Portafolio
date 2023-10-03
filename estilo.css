@@ -26,7 +26,7 @@ html {
  padding: 20px;
  background-color: rgba(30, 35, 38, 0.8);
  /* Fondo semi-transparente */
- max-width: 350px;
+ max-width: 300px;
  margin: auto;
  margin-top: 15%;
  text-align: center;
@@ -120,7 +120,7 @@ a {
 .inicio .contenido-banner {
  padding: 20px;
  background-color: #1e2326;
- max-width: 350px;
+ max-width: 300px;
  margin-top: 20%;
  margin-bottom: 20%;
  text-align: center;
@@ -706,7 +706,7 @@ a {
 }
 
 .contacto .container {
- max-width: 350px;
+ max-width: 300px;
  /* Establece el ancho máximo deseado */
  margin: 0 auto;
  /* Centra horizontalmente */
@@ -727,11 +727,12 @@ a {
 .contacto .contact-info ul {
  list-style: none;
  padding: 0;
+ justify-content: center;
 }
 
 .contacto .contact-info ul li {
  font-size: 20px;
- margin-bottom: 20px;
+ margin-bottom: 13px;
  display: flex;
  align-items: center;
  /* Centrar verticalmente los elementos de la lista */
@@ -739,7 +740,7 @@ a {
 
 .contacto .contact-info .info-label {
  font-weight: bold;
- margin-right: 10px;
+ margin-right: 6px;
  /* Espacio entre la etiqueta y el texto */
 }
 
@@ -839,7 +840,7 @@ a {
  background-color: #252A2E;
  padding: 10px;
  /* Reducido el padding */
- max-swidth: 350px;
+ max-width: 350px;
  left: 50%;
  transform: translate(-50%, -50%);
 }
@@ -873,6 +874,7 @@ form {
  padding: 20px;
  border-radius: 10px;
  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
 }
 
 /* Estilos para etiquetas de campos de entrada */
@@ -883,7 +885,8 @@ label {
 }
 
 #list li {
- font-size: 14px;
+ font-size: 16px;
+
 }
 
 /* Estilos para campos de entrada de texto */
@@ -1029,9 +1032,7 @@ footer .arriba {
  }
 
  
- .contacto .contact-info ul{
- margin-left: 25px;
- }
+ 
  .skills .fila {
  display: block;
  }
