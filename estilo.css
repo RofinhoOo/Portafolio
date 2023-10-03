@@ -440,7 +440,7 @@ a {
 }
 
 .trabajo {
-    margin-left: 20px;
+    text-align: center;
 }
 
 
@@ -448,26 +448,11 @@ a {
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
-}
-
-.curriculum .fila .izquierda {
-    border-right: 2px solid #252A2E;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-
-}
-
-.curriculum .fila .derecha {
-    border-left: 2px solid #252A2E;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    text-align: center;
 }
 
 .curriculum .fila .item {
-    padding: 25px;
+    padding: 16px;
     margin-bottom: 30px;
     background-color: #252A2E;
     position: relative;
@@ -495,7 +480,6 @@ a {
     line-height: 24px;
     margin-top: 15px;
     text-align: justify;
-    word-spacing: 0;
 
 }
 
@@ -505,9 +489,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
-
+    margin-bottom: 50px;
 
 }
 
@@ -517,6 +499,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .curriculum .fila .item .conectori-1 {
@@ -1011,12 +994,66 @@ footer .arriba {
 
     .sobremi .contenido-seccion p {
         text-align: justify;
+        margin: inherit;
+        padding: 8px;
     }
 
+
+    
     .sobremi .fila .col .contenedor-intereses {
         justify-content: center;
         margin-left: 15px;
     }
+
+    .curriculum .fila .item .conectori-1 .circuloi {
+        background-color: transparent; /* Quítale el fondo estableciendo un color transparente */
+      }
+
+      .curriculum .fila .item .conectori-1{
+        background-color: transparent;
+      }
+
+      .curriculum .fila .item .conectori-2 .circuloi {
+        background-color: transparent; /* Quítale el fondo estableciendo un color transparente */
+      }
+
+      .curriculum .fila .item .conectori-2{
+        background-color: transparent;
+      }
+
+      .curriculum .fila .item .conectori-3 .circuloi {
+        background-color: transparent; /* Quítale el fondo estableciendo un color transparente */
+      }
+
+      .curriculum .fila .item .conectori-3{
+        background-color: transparent;
+      }
+
+      .curriculum .fila .item .conectord .circulod{
+        background-color: transparent;
+      }
+
+      .curriculum .fila .item .conectord{
+        background-color: transparent;
+      }
+
+      .curriculum .fila .izq {
+        border-left: 2px solid #1CB698;;
+      }
+
+      .curriculum .fila .der{
+        border-right: 2px solid #1CB698;;
+      }
+
+      .curriculum .fila .izq{
+        margin-right: 0px;
+        margin-bottom: 40px;
+      }
+
+      .curriculum .fila .der{
+        margin-left: 0px;
+        margin-bottom: 40px;
+      }
 
     .sobremi .fila .col ul li strong {
         display: flex;
@@ -1088,6 +1125,7 @@ footer .arriba {
     .curriculum .fila .derecha {
         margin-left: 20px;
     }
+
 
     .portfolio .galeria {
         display: block;
