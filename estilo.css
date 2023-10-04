@@ -434,7 +434,6 @@ a {
 }
 
 .curriculum .fila .col {
-    width: 48%;
     padding: 0 20px;
 
 }
@@ -1082,7 +1081,7 @@ footer .arriba {
         width: 100%;
     }
 
-    .sobremi .fila .col h3 {
+     .sobremi .fila .col h3 {
         text-align: center;
     }
 
@@ -1101,7 +1100,7 @@ footer .arriba {
     }
 
     .curriculum .fila .col {
-        width: 100%;
+        padding: 0px;
 
     }
 
@@ -1120,10 +1119,6 @@ footer .arriba {
     .curriculum .fila .der {
         text-align: center;
 
-    }
-
-    .curriculum .fila .derecha {
-        margin-left: 20px;
     }
 
 
