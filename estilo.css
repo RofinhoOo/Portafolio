@@ -845,7 +845,7 @@ a {
 
 /* Estilos generales para formularios */
 form {
-    max-width: 300px;
+    
     margin: 0 auto;
     background-color: #b9b8b63d;
     display: flex;
@@ -994,7 +994,7 @@ footer .arriba {
     .sobremi .contenido-seccion p {
         text-align: justify;
         margin: inherit;
-        padding: 8px;
+        word-spacing: -1px;
     }
 
 
@@ -1067,6 +1067,10 @@ footer .arriba {
 
     }
 
+    .form{
+        max-width: 300px;
+    }
+
 
 
     .skills .fila {
@@ -1096,6 +1100,8 @@ footer .arriba {
 
     .curriculum .fila .item p {
         text-align: justify;
+        font-size: 14px;
+        word-spacing: -3px;
 
     }
 
