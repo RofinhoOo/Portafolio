@@ -195,7 +195,7 @@ a {
     margin-bottom: 0px;
     margin-left: 30px;
     margin-right: 30px;
-    text-align: justify;
+    text-align: start !important;
 
 
 }
@@ -478,7 +478,9 @@ a {
 .curriculum .fila .item p {
     line-height: 24px;
     margin-top: 15px;
-    text-align: justify;
+    text-align: start !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
 
 }
 
@@ -949,20 +951,23 @@ footer .arriba {
 }
 
 /* SECCION RESPONSIVE */
-@media screen and (max-width:980px) {
+
+@media screen and (max-width:700px) {
+
     nav {
         display: none;
     }
 
     .nav-responsive {
         display: block;
+        margin-right: 60px !important;
     }
 
     nav.responsive {
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 75px;
+        display: block !important;
+        position: absolute !important;
+        right: 40px;
+        top: 60px;
         background-color: #252A2E;
         width: 180px;
     }
@@ -975,9 +980,8 @@ footer .arriba {
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
-}
 
-@media screen and (max-width:700px) {
+    
     .sobremi .fila {
         display: block;
         width: 100%;
@@ -1046,6 +1050,12 @@ footer .arriba {
         margin-bottom: 40px;
       }
 
+      .curriculum .fila .item p{
+        text-align: start !important;
+        padding-left: 10px  !important;
+        padding-right: 10px  !important;
+      }
+
       .curriculum .fila .der{
         margin-left: 0px;
         margin-bottom: 40px;
@@ -1097,7 +1107,7 @@ footer .arriba {
 
     .curriculum .fila .item p {
         text-align: justify;
-        font-size: 14px;
+        font-size: 16px;
         word-spacing: -3px;
 
     }
@@ -1130,16 +1140,6 @@ footer .arriba {
         width: 100%;
     }
 
-    .portfolio .galeria .proyecto {
-        max-width: 100%;
-    }
-
-    .portfolio .galeria .proyecto img {
-        width: 100%;
-    }
-    
-
-    
 
     .contacto .fila {
         display: block;
@@ -1149,28 +1149,6 @@ footer .arriba {
         width: 100%;
     }
 
-    nav {
-        display: none;
-        /* Oculta el menú de navegación normal */
-    }
-
-    .nav-responsive {
-        display: block;
-        /* Muestra el botón de hamburguesa u otro ícono para abrir el menú */
-    }
-
-    nav.responsive {
-        /* Estilos para el menú de navegación móvil */
-        /* ... */
-    }
-
-    nav.responsive ul {
-        /* ... */
-    }
-
-    nav.responsive ul li {
-        /* ... */
-    }
 
     body {
         font-size: 16px;
