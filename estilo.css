@@ -952,7 +952,7 @@ footer .arriba {
 
 /* SECCION RESPONSIVE */
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:768px) {
 
     nav {
         display: none;
@@ -982,8 +982,9 @@ footer .arriba {
     }
 
     .contenedor-header {
-        padding: 10px !important; /* Ajusta el valor de padding según tus necesidades */
+       
         box-sizing: border-box !important;
+        width: 100% !important;
     }
 
     
@@ -1143,6 +1144,11 @@ footer .arriba {
     .portfolio .galeria {
         display: block;
         width: 100%;
+    }
+
+    .portfolio .galeria .proyecto .overlay{
+        justify-content: center !important;
+        align-items: center !important;
     }
 
 
