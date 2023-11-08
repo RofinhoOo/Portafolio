@@ -48,6 +48,19 @@ html {
 
 }
 
+.logo-header {
+    max-width: 50px;
+    /* Ajusta el ancho máximo según tus preferencias */
+    height: auto;
+    /* Para mantener la proporción original */
+    display: block;
+    /* Para asegurarse de que el logo respete su contenedor */
+    float: left;
+    /* Alinear a la izquierda */
+    margin-right: 20px;
+    /* Agrega un margen derecho para separar el logo de otros elementos del encabezado */
+}
+
 .contenedor-header header {
     max-width: 1100px;
     margin: auto;
@@ -71,13 +84,19 @@ a {
     font-size: 36px;
     color: #1CB698;
     text-decoration: none;
+    margin-left: -230px;
 
+}
+
+.logo-header{
+    margin-left: -80px;
 }
 
 .contenedor-header header ul {
     display: flex;
     list-style: none;
     margin-top: 20px;
+    margin-right: -100px;
 
 
 }
@@ -908,10 +927,27 @@ footer {
     text-align: center;
     position: relative;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo-footer {
+    max-width: 50px;
+    /* Ajusta el ancho máximo según tus preferencias */
+    height: auto;
+    /* Para mantener la proporción original */
+    display: block;
+    /* Para asegurarse de que el logo respete su contenedor */
+    float: left;
+    /* Alinear a la izquierda */
+    margin-left: 40px;
+    /* Agrega un margen derecho para separar el logo de otros elementos del encabezado */
 }
 
 footer .redes {
-    margin-bottom: 20px;
+    margin-right: 120px;
 }
 
 /* Estilo normal de los íconos de redes sociales */
@@ -960,8 +996,8 @@ footer .arriba {
     body {
         font-size: 16px;
         position: absolute !important;
-        
-       
+
+
 
     }
 
@@ -972,7 +1008,7 @@ footer .arriba {
     li {
         margin: 0;
         padding: 0;
-        
+
 
 
     }
@@ -1024,6 +1060,7 @@ footer .arriba {
         /* Cambia el tamaño de la fuente según tus necesidades */
         color: #1CB698;
         text-decoration: none;
+        margin-right: 400px;
     }
 
     .contenedor-header header {
@@ -1033,6 +1070,10 @@ footer .arriba {
         justify-content: space-between;
         align-items: center;
         padding: 15px 25px;
+    }
+
+    .logo-header{
+        margin-left: 40px;
     }
 
     .inicio {
@@ -1225,8 +1266,29 @@ footer .arriba {
     }
 
 
+    footer {
+        flex-direction: row;
+        /* Mantener la dirección de los elementos en una fila */
+        
+        
+        
+        /* Ajusta el espacio en el footer */
+
+    }
+
+    .logo-footer{
+        margin-right: 120px;
+    }
 
 
+
+    .redes {
+        display: flex;
+        justify-content: end;
+        margin-left: 400px;
+        
+        /* Espacio entre los iconos de redes sociales */
+    }
 
 
 }
