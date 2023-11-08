@@ -687,7 +687,7 @@ a {
 }
 
 .contacto .container {
-    max-width: 300px;
+    max-width: 700px;
     /* Establece el ancho máximo deseado */
     margin: 0 auto;
     /* Centra horizontalmente */
@@ -954,10 +954,25 @@ footer .arriba {
 
 @media screen and (max-width:768px) {
 
-    body, div, p, ul, li {
+    body {
+        font-size: 16px;
+        position: absolute !important;
+        
+       
+
+    }
+
+    body,
+    div,
+    p,
+    ul,
+    li {
         margin: 0;
         padding: 0;
-      }
+        
+
+
+    }
 
     nav {
         display: none;
@@ -965,7 +980,8 @@ footer .arriba {
 
     .nav-responsive {
         display: block;
-        margin-right: 60px !important;
+        margin-right: 40px;
+
     }
 
     nav.responsive {
@@ -1017,11 +1033,13 @@ footer .arriba {
     }
 
     .inicio {
-        margin-top: 40px; /* Cambia el margen según sea necesario */
+        margin-top: 40px;
+        /* Cambia el margen según sea necesario */
     }
 
     .sobremi {
-        padding: 20px; /* Cambia el relleno según sea necesario */
+        padding: 20px;
+        /* Cambia el relleno según sea necesario */
     }
 
 
@@ -1204,10 +1222,7 @@ footer .arriba {
     }
 
 
-    body {
-        font-size: 16px;
-        position: absolute !important;
-    }
+
 
 
 
