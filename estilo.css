@@ -1060,7 +1060,11 @@ footer .arriba {
         /* Cambia el tamaño de la fuente según tus necesidades */
         color: #1CB698;
         text-decoration: none;
-        margin-right: 400px;
+       
+    }
+
+    .contenedor-header header .logo{
+        margin-left: 220px;
     }
 
     .contenedor-header header {
@@ -1073,7 +1077,7 @@ footer .arriba {
     }
 
     .logo-header{
-        margin-left: 40px;
+        margin-left: 20px;
     }
 
     .inicio {
@@ -1247,7 +1251,7 @@ footer .arriba {
 
 
     .portfolio .galeria {
-        display: block;
+        display: inline-grid;
         width: 100%;
     }
 
@@ -1267,8 +1271,9 @@ footer .arriba {
 
 
     footer {
-        flex-direction: row;
+        flex-direction: row !important;
         /* Mantener la dirección de los elementos en una fila */
+        
         
         
         
@@ -1277,18 +1282,17 @@ footer .arriba {
     }
 
     .logo-footer{
-        margin-right: 120px;
-    }
-
-
-
-    .redes {
-        display: flex;
-        justify-content: end;
-        margin-left: 400px;
         
-        /* Espacio entre los iconos de redes sociales */
     }
+
+    footer .redes{
+        display: flex;
+        margin-right: 20px;
+    }
+
+
+
+    
 
 
 }
