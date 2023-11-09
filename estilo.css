@@ -307,7 +307,8 @@ a {
 .sobremi button {
     cursor: pointer;
     background-color: transparent;
-    border: 2px solid #fff;
+    border-radius: 10px;
+    border: 2px solid white;
     width: fit-content;
     display: block;
     margin: 20px auto;
@@ -328,6 +329,7 @@ a {
     background-color: transparent;
     z-index: -1;
     transition: 2s;
+    border-radius: 10px;
 }
 
 .sobremi button:hover .overlay {
@@ -652,6 +654,8 @@ a {
 .portfolio .galeria .proyecto img {
     width: 100%;
     display: block;
+    border: 3px solid rgba(14, 13, 13, 0.5);
+    border-radius: 10px;
 }
 
 .portfolio .galeria .proyecto .overlay {
@@ -668,6 +672,7 @@ a {
     letter-spacing: 3px;
     opacity: 0;
     transition: opacity 1s;
+    border-radius: 10px;
 }
 
 .portfolio .galeria .proyecto .overlay h3 {
@@ -747,6 +752,8 @@ a {
     /* Espacio entre la etiqueta y el texto */
 }
 
+
+
 .contacto .contact-info i {
     margin-right: 10px;
     /* Espacio entre el icono y el texto */
@@ -804,6 +811,7 @@ a {
     color: #fff;
     position: relative;
     z-index: 10;
+    border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
 }
 
