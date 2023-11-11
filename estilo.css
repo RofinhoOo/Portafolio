@@ -1009,6 +1009,10 @@ footer .arriba {
 
     }
 
+    html{
+        overflow: hidden !important;
+    }
+
     body,
     div,
     p,
@@ -1016,7 +1020,7 @@ footer .arriba {
     li {
         margin: 0;
         padding: 0;
-
+        
 
 
     }
